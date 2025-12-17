@@ -1,0 +1,88 @@
+# Documentation of Gradle Module Metadata, Attributes, and Rules
+
+## Known attributes
+
+### From Gradle
+- `org.gradle.category` 
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Category.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Category.html)
+  - Known values
+    - `documentation`
+    - `library`
+- `org.gradle.dependency.bundling`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Bundling.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Bundling.html)
+  - Known values
+    - `external`
+- `org.gradle.docstype`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/DocsType.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/DocsType.html)
+- `org.gradle.usage`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Usage.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Usage.html)
+  - Known values
+    - `java-runtime`
+    - `java-api`
+    - `kotlin-metadata`
+    - `kotlin-api`
+- `org.gradle.libraryelements`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/LibraryElements.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/LibraryElements.html)
+  - Known values
+    - `aar`
+    - `jar`
+- `org.gradle.jvm.environment`
+  - [Source code](https://github.com/gradle/gradle/blob/master/platforms/jvm/jvm-services/src/main/java/org/gradle/api/attributes/java/TargetJvmEnvironment.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/java/TargetJvmEnvironment.html)
+  - Known values
+    - `android`
+    - `standard-jvm`
+    - `non-jvm`
+- `org.gradle.jvm.version`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/java/TargetJvmVersion.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/java/TargetJvmVersion.html)
+- `org.gradle.docstype`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/DocsType.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/DocsType.html)
+  - Known values
+    - `sources`
+
+### From Kotlin Gradle Plugin
+- `org.jetbrains.kotlin.platform.type`
+  - Known values
+    - `jvm`
+- `org.jetbrains.kotlin.platform.type`
+  - Known values
+    - `common`
+    - `native`
+    - `js`
+    - `jvm`
+    - `wasm`
+- `org.jetbrains.kotlin.native.target`
+  - Known values
+    - `android_arm32`
+    - `android_arm64`
+    - `android_x64`
+    - `android_x86`
+    - `ios_arm64`
+    - `ios_simulator_arm64`
+    - `ios_x64`
+    - `linux_arm64`
+    - `linux_x64`
+    - `macos_arm64`
+    - `macos_x64`
+    - `mingw_x64`
+    - `tvos_arm64`
+    - `tvos_simulator_arm64`
+    - `tvos_x64`
+    - `watchos_arm32`
+    - `watchos_arm64`
+    - `watchos_device_arm64`
+    - `watchos_simulator_arm64`
+    - `watchos_x64`
+- `org.jetbrains.kotlin.js.compiler`
+  - Known values
+    - `ir`
+- `org.jetbrains.kotlin.wasm.target`
+  - Known values
+    - `js`
