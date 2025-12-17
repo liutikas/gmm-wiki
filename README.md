@@ -49,9 +49,7 @@
 
 ### From Kotlin Gradle Plugin
 - `org.jetbrains.kotlin.platform.type`
-  - Known values
-    - `jvm`
-- `org.jetbrains.kotlin.platform.type`
+  - [Source code](https://github.com/JetBrains/kotlin/blob/master/libraries/tools/kotlin-gradle-plugin-api/src/common/kotlin/org/jetbrains/kotlin/gradle/plugin/KotlinPlatformType.kt) 
   - Known values
     - `common`
     - `native`
@@ -59,6 +57,7 @@
     - `jvm`
     - `wasm`
 - `org.jetbrains.kotlin.native.target`
+  - [Source code](https://github.com/JetBrains/kotlin/blob/master/libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/native/KotlinNativeTarget.kt)
   - Known values
     - `android_arm32`
     - `android_arm64`
@@ -81,8 +80,11 @@
     - `watchos_simulator_arm64`
     - `watchos_x64`
 - `org.jetbrains.kotlin.js.compiler`
+  - [Source code](https://github.com/JetBrains/kotlin/blob/master/libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/KotlinJsCompilerAttribute.kt)
   - Known values
     - `ir`
 - `org.jetbrains.kotlin.wasm.target`
+  - [Source code](https://github.com/JetBrains/kotlin/blob/master/libraries/tools/kotlin-gradle-plugin/src/common/kotlin/org/jetbrains/kotlin/gradle/targets/js/KotlinWasmCompilerAttribute.kt)
   - Known values
     - `js`
+    - `wasi`
