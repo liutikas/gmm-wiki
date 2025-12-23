@@ -3,6 +3,15 @@
 ## Known attributes
 
 ### From Gradle
+- `org.gradle.usage`
+  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Usage.java)
+  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Usage.html)
+  - Setting this attribute is strongly recommended.
+  - Known values
+    - `java-runtime`
+    - `java-api`
+    - `kotlin-metadata`
+    - `kotlin-api`
 - `org.gradle.category` 
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Category.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Category.html)
@@ -17,14 +26,6 @@
 - `org.gradle.docstype`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/DocsType.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/DocsType.html)
-- `org.gradle.usage`
-  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Usage.java)
-  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Usage.html)
-  - Known values
-    - `java-runtime`
-    - `java-api`
-    - `kotlin-metadata`
-    - `kotlin-api`
 - `org.gradle.libraryelements`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/LibraryElements.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/LibraryElements.html)
