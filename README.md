@@ -89,3 +89,15 @@
   - Known values
     - `js`
     - `wasi`
+
+### From Kotlin Resources Plugin
+- `dev.opensavvy.resources`
+  - [Source code](https://gitlab.com/opensavvy/automation/kotlin-js-resources/-/blob/main/shared/src/main/kotlin/Attributes.kt)
+  - [Documentation](https://kotlin-resources.opensavvy.dev/)
+  - Known values
+    - `Regular`
+  - Must be used alongside
+    - `org.gradle.category`
+    - `org.gradle.libraryelements`
+    - `org.jetbrains.kotlin.platform.type`
+    - `org.jetbrains.kotlin.native.target`
