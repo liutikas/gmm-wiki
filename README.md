@@ -1,5 +1,11 @@
 # Documentation of Gradle Module Metadata, Attributes, and Rules
 
+The Gradle [dependency resolution algorithm](https://docs.gradle.org/current/userguide/variant_aware_resolution.html#sec:abm-algorithm) is complex. 
+
+This repository aims to document how different attributes are used so that best practices can emerge.
+
+If you are a plugin author, please contribute to this repository by documenting how your plugin uses attributes.
+
 ## Known attributes
 
 ### From Gradle
