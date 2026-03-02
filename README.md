@@ -9,6 +9,7 @@ If you are a plugin author, please contribute to this repository by documenting 
 ## Known attributes
 
 ### From Gradle
+#### [User Guide](https://docs.gradle.org/current/userguide/variant_attributes.html#ecosystem_independent_standard_attributes)
 - `org.gradle.usage`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Usage.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Usage.html)
@@ -18,26 +19,49 @@ If you are a plugin author, please contribute to this repository by documenting 
     - `java-api`
     - `kotlin-metadata`
     - `kotlin-api`
+    - `cplusplus-api`
+    - `native-link`
+    - `native-runtime`
+    - `swift-api`
+    - `version-catalog`
 - `org.gradle.category` 
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Category.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Category.html)
   - Known values
     - `documentation`
     - `library`
+    - `platform`
+    - `enforced-platform`
+    - `verification`
 - `org.gradle.dependency.bundling`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Bundling.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Bundling.html)
   - Known values
     - `external`
+    - `embedded`
+    - `shadowd`
 - `org.gradle.docstype`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/DocsType.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/DocsType.html)
+  - Known values:
+    - `javadoc`
+    - `sources`
+    - `user-manual`
+    - `samples`
+    - `doxygen`
 - `org.gradle.libraryelements`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/LibraryElements.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/LibraryElements.html)
   - Known values
     - `aar`
     - `jar`
+    - `classes`
+    - `resources`
+    - `classes+resources`
+    - `headers-cplusplus`
+    - `link-archive`
+    - `objects`
+    - `dynamic-lib`
 - `org.gradle.jvm.environment`
   - [Source code](https://github.com/gradle/gradle/blob/master/platforms/jvm/jvm-services/src/main/java/org/gradle/api/attributes/java/TargetJvmEnvironment.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/java/TargetJvmEnvironment.html)
@@ -48,11 +72,23 @@ If you are a plugin author, please contribute to this repository by documenting 
 - `org.gradle.jvm.version`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/java/TargetJvmVersion.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/java/TargetJvmVersion.html)
-- `org.gradle.docstype`
-  - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/DocsType.java)
-  - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/DocsType.html)
+      - Integer (8-25)  
+       
+### From Native Ecosystem
+#### [Userguide](https://docs.gradle.org/current/userguide/variant_attributes.html#native_ecosystem_specific_attributes)
+- `org.gradle.native.debuggable` : boolean
+- `org.gradle.native.optimized`  :boolean
+- `org.gradle.native.architecture`
   - Known values
-    - `sources`
+    - `x86`
+    - `x86-64`
+    - `aarch64`
+- `org.gradle.native.operatingSystem`
+  - Known values
+    - `windows`
+    - `linux`
+    - `macos`
+
 
 ### From Kotlin Gradle Plugin
 - `org.jetbrains.kotlin.platform.type`
@@ -107,3 +143,6 @@ If you are a plugin author, please contribute to this repository by documenting 
     - `org.gradle.libraryelements`
     - `org.jetbrains.kotlin.platform.type`
     - `org.jetbrains.kotlin.native.target`
+
+### From [Extra Java Module Info Gradle plugin](https://github.com/gradlex-org/extra-java-module-info)
+- `javaModule` : boolean
