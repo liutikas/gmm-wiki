@@ -14,7 +14,8 @@ If you are a plugin author, please contribute to this repository by documenting 
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Usage.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Usage.html)
   - Setting this attribute is strongly recommended.
-  - Known values
+  - If developing a third party plugin that needs to avoid clashing with other attributes, using reverse DNS naming is recommended.
+  - Gradle known values 
     - `java-runtime`
     - `java-api`
     - `kotlin-metadata`
@@ -27,7 +28,9 @@ If you are a plugin author, please contribute to this repository by documenting 
 - `org.gradle.category` 
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Category.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Category.html)
-  - Known values
+  - Setting this attribute is strongly recommended.
+  - If developing a third party plugin that needs to avoid clashing with other attributes, using reverse DNS naming is recommended.
+  - Gradle known values
     - `documentation`
     - `library`
     - `platform`
