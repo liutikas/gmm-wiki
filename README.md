@@ -25,6 +25,8 @@ If you are a plugin author, please contribute to this repository by documenting 
     - `native-runtime`
     - `swift-api`
     - `version-catalog`
+  - Example third party value
+    - `com.example.usage.metadata` 
 - `org.gradle.category` 
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Category.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Category.html)
@@ -36,6 +38,8 @@ If you are a plugin author, please contribute to this repository by documenting 
     - `platform`
     - `enforced-platform`
     - `verification`
+  - Example third party value
+    - `com.example.category.metadata` 
 - `org.gradle.dependency.bundling`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/Bundling.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/Bundling.html)
