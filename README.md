@@ -79,7 +79,30 @@ If you are a plugin author, please contribute to this repository by documenting 
 - `org.gradle.jvm.version`
   - [Source code](https://github.com/gradle/gradle/blob/master/subprojects/core-api/src/main/java/org/gradle/api/attributes/java/TargetJvmVersion.java)
   - [Documentation](https://docs.gradle.org/nightly/javadoc/org/gradle/api/attributes/java/TargetJvmVersion.html)
-      - Integer (8-25)  
+      - Integer (8-25)
+- `artifactType`
+  - [Source code](https://github.com/gradle/gradle/blob/6402a9ed7960f1a88687f1bffd5f53873f14bde4/subprojects/core-api/src/main/java/org/gradle/api/artifacts/type/ArtifactTypeDefinition.java#L38)
+  - [Documentation](https://docs.gradle.org/current/javadoc/org/gradle/api/artifacts/type/ArtifactTypeDefinition.html#ARTIFACT_TYPE_ATTRIBUTE)
+  - Known values
+    - `jar`
+    - `java-classes-directory`
+    - `java-resources-directory`
+    - `zip`
+    - `directory`
+    - `binary`
+    - `android-aar-metadata` (from Android)
+    - `android-art-profile` (from Android)
+    - `android-assets` (from Android)
+    - `android-classes-directory` (from Android)
+    - `android-classes-jar` (from Android)
+    - `android-compiled-dependencies-resources` (from Android)
+    - `android-consumer-proguard-rules` (from Android)
+    - `android-java-res` (from Android)
+    - `android-jni` (from Android)
+    - `android-lint` (from Android)
+    - `android-lint-local-aar` (from Android)
+    - `android-lint-model-metadata` (from Android)
+    - ...
        
 ### From Native Ecosystem
 #### [Userguide](https://docs.gradle.org/current/userguide/variant_attributes.html#native_ecosystem_specific_attributes)
